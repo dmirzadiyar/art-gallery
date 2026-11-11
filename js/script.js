@@ -1,10 +1,7 @@
-/* Canvas & Co. — Endterm interactive features
-   jQuery is used for live filtering and gallery transitions.
-*/
+
 (function ($) {
   "use strict";
 
-  // 1. Registration form validation
   const $registrationForm = $("#registrationForm");
   if ($registrationForm.length) {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -98,7 +95,6 @@
     });
   }
 
-  // 2. Live artwork search and category filtering
   const $galleryItems = $(".gallery-item");
   if ($galleryItems.length) {
     let activeCategory = "all";
@@ -127,7 +123,6 @@
     });
   }
 
-  // 3. CRUD table — localStorage-backed demo records
   const $tableBody = $("#artworkTableBody");
   if ($tableBody.length) {
     const storageKey = "canvasCoArtworkRecords";
@@ -222,7 +217,6 @@
     renderRecords();
   }
 
-  // 4. Lightbox with jQuery fade transitions and keyboard navigation
   const $lightbox = $("#artLightbox");
   if ($lightbox.length) {
     let currentIndex = 0;

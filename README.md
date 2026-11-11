@@ -51,11 +51,8 @@ Canvas & Co. is a responsive, multi-page art gallery website. Visitors can learn
 > If the published website link does not open, enable GitHub Pages for the repository (Settings → Pages → Deploy from a branch → `main` / root), then verify the deployment URL.
 
 ## Screenshots
-The `screenshots/` folder contains the original Midterm screenshots. For the Endterm submission, capture and add updated screenshots showing:
-1. Registration form validation and password strength.
-2. Gallery search and category filters.
-3. CRUD table with Add / Edit / Delete controls.
-4. Lightbox with image navigation.
+ 
+
 
 ![scr](screenshots/scr1.png)
 ![scr](screenshots/scr2.png)
