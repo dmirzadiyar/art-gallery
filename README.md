@@ -27,7 +27,7 @@ Canvas & Co. is a responsive, multi-page art gallery website. Visitors can learn
 - **Interactive image gallery:** click an artwork to open a lightbox, navigate with previous/next arrows or keyboard arrow keys, and close with Escape or the close button. jQuery fade and animation effects are used for transitions.
 - **Shared JavaScript file:** interactive behavior is organized in `js/script.js`.
 
-> **Note:** This is a front-end educational project. The registration form does not create real accounts or transmit personal data. CRUD records are stored locally in the current browser and are not synchronized with a server.
+
 
 ## Technologies used
 - HTML5
@@ -48,7 +48,7 @@ Canvas & Co. is a responsive, multi-page art gallery website. Visitors can learn
 - **GitHub repository:** https://github.com/dmirzadiyar/art-gallery
 - **Published website:** https://dmirzadiyar.github.io/art-gallery/
 
-> If the published website link does not open, enable GitHub Pages for the repository (Settings → Pages → Deploy from a branch → `main` / root), then verify the deployment URL.
+
 
 ## Screenshots
  
