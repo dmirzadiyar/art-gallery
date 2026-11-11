@@ -21,6 +21,35 @@
   </div></section>
   <section class="visit-band"><div class="container visit-inner"><div><p class="eyebrow">Plan your visit</p><h2>Good art. Good company.</h2><p>Open Tuesday–Sunday · 10:00–18:00</p></div><a class="btn btn-light rounded-pill px-4 py-3" href="contact.html">Plan a visit ↗</a></div></section>
   <section class="section-pad"><div class="container"><div class="section-heading"><div><p class="eyebrow">Admission guide</p><h2>Visit options</h2></div><p class="heading-note">Example prices for the project website.</p></div><div class="table-responsive"><table class="table price-table"><thead><tr><th scope="col">Ticket</th><th scope="col">Includes</th><th scope="col">Price</th></tr></thead><tbody><tr><td>General admission</td><td>Access to current exhibitions</td><td>2,500 ₸</td></tr><tr><td>Student ticket</td><td>Exhibitions with valid student ID</td><td>1,500 ₸</td></tr><tr><td>Guided tour</td><td>Exhibition entry + 45-minute tour</td><td>4,000 ₸</td></tr><tr><td>Under 12</td><td>Entry with an accompanying adult</td><td>Free</td></tr></tbody></table></div><p class="table-note">Prices are illustrative and are not real booking offers.</p></div></section>
+  <section class="section-pad artwork-admin-section" id="artwork-manager">
+    <div class="container">
+      <div class="section-heading"><div><p class="eyebrow">Collection management</p><h2>Artwork records</h2></div><p class="heading-note">A client-side CRUD demo. Add, edit, and remove artworks from this table.</p></div>
+      <div class="admin-toolbar"><p id="recordCount" class="mb-0">6 records</p><button class="btn btn-dark rounded-pill px-4" id="addArtworkBtn" type="button">＋ Add artwork</button></div>
+      <div class="table-responsive">
+        <table class="table price-table admin-table">
+          <thead><tr><th scope="col">Artwork</th><th scope="col">Artist</th><th scope="col">Category</th><th scope="col">Year</th><th scope="col">Actions</th></tr></thead>
+          <tbody id="artworkTableBody"></tbody>
+        </table>
+      </div>
+      <p class="table-note">Changes are saved in this browser using localStorage. They are not sent to a server.</p>
+    </div>
+  </section>
+  <div class="modal fade" id="artworkModal" tabindex="-1" aria-labelledby="artworkModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content artwork-modal">
+      <form id="artworkForm">
+        <div class="modal-header"><h2 class="modal-title fs-4" id="artworkModalTitle">Add artwork</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+        <div class="modal-body">
+          <input type="hidden" id="artworkId">
+          <div class="mb-3"><label class="form-label" for="artworkTitle">Artwork title *</label><input class="form-control" id="artworkTitle" required maxlength="70"></div>
+          <div class="mb-3"><label class="form-label" for="artworkArtist">Artist *</label><input class="form-control" id="artworkArtist" required maxlength="50"></div>
+          <div class="row g-3"><div class="col-sm-8"><label class="form-label" for="artworkCategory">Category *</label><select class="form-select" id="artworkCategory" required><option>Abstract</option><option>Portrait</option><option>Mixed media</option><option>Contemporary</option><option>Classical</option></select></div><div class="col-sm-4"><label class="form-label" for="artworkYear">Year *</label><input class="form-control" id="artworkYear" type="number" min="1000" max="2100" value="2026" required></div></div>
+        </div>
+        <div class="modal-footer"><button type="button" class="btn btn-outline-dark rounded-pill" data-bs-dismiss="modal">Cancel</button><button type="submit" class="btn btn-dark rounded-pill">Save artwork</button></div>
+      </form>
+    </div></div>
+  </div>
 </main>
 <footer class="site-footer"><div class="container footer-top"><a class="brand footer-brand" href="index.html"><span class="brand-mark">C</span>anvas <span class="brand-amp">&</span> Co.</a><p>Art for the curious. Space for everyone.</p><div class="footer-social"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest ↗</a></div></div><div class="container footer-bottom"><span>© 2026 Canvas & Co. Student project.</span><a href="contact.html">Get in touch ↗</a></div></footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script></body></html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script></body></html>
