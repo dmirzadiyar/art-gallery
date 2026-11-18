@@ -123,6 +123,7 @@ AI assistance (ChatGPT) was used to support documentation organization, technica
 
 - GitHub Repository: https://github.com/dmirzadiyar/art-gallery
 - Published Website: https://dmirzadiyar.github.io/art-gallery/
+- Project Report: [report/Final-Project-Report.pdf](report/Final-Project-Report.pdf)
 
 ## Screenshots
 
